@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Apps 1, LLC</title>
+    <meta name="description" content="Contact Apps 1, LLC" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="index.html">Apps <span>1, LLC</span></a>
+        <button class="menu-toggle" data-menu-toggle aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <nav class="nav-links" data-nav-links>
+          <a href="index.html">Home</a>
+          <a href="barrelconnect.html">Barrelconnect</a>
+          <a href="bullrider.html">Bullrider</a>
+          <a href="contact.html" class="active">Contact</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero app-hero">
+      <img src="assets/images/ranch-contact.jpg" alt="The Triple Bar M Ranch, Wyoming" />
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>Contact Apps 1, LLC</h1>
+        <span class="overlay-caption">The Triple Bar M Ranch, Wyoming</span>
+      </div>
+    </section>
+
+    <main>
+      <section class="contact-layout">
+        <article class="card">
+          <h2 class="section-title">Direct Contact</h2>
+          <p><strong>Email:</strong> <a href="mailto:michael@apps1llc.com">michael@apps1llc.com</a></p>
+          <p><strong>Phone:</strong> [PHONE_PLACEHOLDER]</p>
+          <p class="small-note">Phone placeholder intentionally left for later update.</p>
+        </article>
+
+        <article class="card">
+          <h2 class="section-title">Message Form</h2>
+          <form class="form" action="mailto:michael@apps1llc.com" method="post" enctype="text/plain">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button class="btn primary" type="submit">Send</button>
+          </form>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-wrap">
+        <div>© <span data-year></span> Apps 1, LLC. All rights reserved.</div>
+        <div>michael@apps1llc.com</div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
