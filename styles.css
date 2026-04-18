@@ -229,11 +229,21 @@ main {
 }
 
 .barrelconnect-hero img {
-  object-position: center 22%;
+  object-position: center center;
+  filter: brightness(1.35);
 }
 
 .barrelconnect-hero .overlay {
-  background: linear-gradient(180deg, rgba(3, 7, 10, 0.22), rgba(4, 8, 12, 0.58));
+  background: linear-gradient(180deg, rgba(3, 7, 10, 0.14), rgba(4, 8, 12, 0.44));
+}
+
+.bullrider-hero img {
+  object-position: center top;
+}
+
+.ranch-hero-home img,
+.ranch-hero-contact img {
+  filter: brightness(1.28);
 }
 
 .brand-accent-barrel {
@@ -247,7 +257,8 @@ main {
 .buckle-wrap {
   max-width: 380px;
   margin: 1.5rem auto 0;
-  padding-top: 0.8rem;
+  padding-top: 1.4rem;
+  overflow: visible;
 }
 
 .buckle-wrap img {
@@ -329,6 +340,17 @@ ul.compact {
   padding: 0.35rem 0.7rem;
   font-size: 0.82rem;
   color: #eef5fd;
+}
+
+.overlay-caption-lower-right {
+  position: absolute;
+  right: clamp(0.75rem, 2.8vw, 1.6rem);
+  bottom: clamp(0.75rem, 3.2vw, 1.6rem);
+  margin-top: 0;
+  z-index: 2;
+  background: rgba(7, 14, 21, 0.82);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.32);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.55);
 }
 
 @media (max-width: 900px) {
