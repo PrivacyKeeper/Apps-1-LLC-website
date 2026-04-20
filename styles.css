@@ -259,6 +259,9 @@ main {
   filter: brightness(1.28);
 }
 
+.ranch-hero-investor img {
+  object-position: center center;
+}
 .brand-accent-barrel {
   color: #85d5ff;
 }
