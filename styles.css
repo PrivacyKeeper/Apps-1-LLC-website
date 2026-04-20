@@ -325,6 +325,26 @@ textarea {
   resize: vertical;
 }
 
+.form-status {
+  margin: 0.1rem 0 0.2rem;
+  min-height: 1.1rem;
+  font-size: 0.9rem;
+  color: #c8d7e8;
+}
+
+.form-status.success {
+  color: #66d59f;
+}
+
+.form-status.error {
+  color: #ff8888;
+}
+
+.form button[disabled] {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
 .investor-page {
   max-width: 900px;
 }

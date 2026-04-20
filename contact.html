@@ -44,16 +44,20 @@
 
         <article class="card">
           <h2 class="section-title">Message Form</h2>
-          <form class="form" action="mailto:michael@apps1llc.com" method="post" enctype="text/plain">
+          <form class="form" action="/api/send-email" method="post" data-email-form data-form-type="contact">
             <label for="name">Name</label>
-            <input id="name" name="name" type="text" required />
+            <input id="name" name="name" type="text" autocomplete="name" required />
 
             <label for="email">Email</label>
-            <input id="email" name="email" type="email" required />
+            <input id="email" name="email" type="email" autocomplete="email" required />
+
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required />
 
             <label for="message">Message</label>
             <textarea id="message" name="message" required></textarea>
 
+            <p class="form-status" data-form-status aria-live="polite"></p>
             <button class="btn primary" type="submit">Send</button>
           </form>
         </article>
