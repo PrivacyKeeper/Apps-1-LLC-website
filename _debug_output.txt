@@ -1,0 +1,247 @@
+=== index.html (first 80 lines) ===
+     1	<!doctype html>
+     2	<html lang="en">
+     3	  <head>
+     4	    <meta charset="UTF-8" />
+     5	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     6	    <title>Apps 1, LLC | Real & Usable Apps</title>
+     7	    <meta name="description" content="Apps 1, LLC builds practical mobile-first applications, including BarrelConnect and Bullrider.Pro." />
+     8	    <link rel="stylesheet" href="styles.css" />
+     9	  </head>
+    10	  <body>
+    11	    <header class="site-header">
+    12	      <div class="nav-wrap">
+    13	        <a class="brand" href="index.html">Apps <span>1, LLC</span></a>
+    14	        <button class="menu-toggle" data-menu-toggle aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    15	        <nav class="nav-links" data-nav-links>
+    16	          <a href="index.html" class="active">Home</a>
+    17	          <a href="barrelconnect.html">Barrelconnect</a>
+    18	          <a href="bullrider.html">Bullrider</a>
+    19	          <a href="apps-in-development.html">Apps in Development</a>
+    20	          <a href="investor-relations.html">Investor Relations</a>
+    21	          <a href="contact.html">Contact</a>
+    22	          <a href="privacy.html">Privacy</a>
+    23	          <a href="terms.html">Terms</a>
+    24	        </nav>
+    25	      </div>
+    26	    </header>
+    27	
+    28	    <section class="hero ranch-hero-home">
+    29	      <img
+    30	        src="assets/images/ranch-hero-1.jpg"
+    31	        srcset="assets/images/ranch-hero-1.jpg 1x, assets/images/ranch-hero-2.jpg 2x"
+    32	        alt="The Triple Bar M Ranch landscape"
+    33	      />
+    34	      <div class="overlay"></div>
+    35	      <div class="hero-content">
+    36	        <h1>Apps 1, LLC - Where Real and Usable Apps Get Built</h1>
+    37	        <p>
+    38	          Built with a western work ethic and practical product focus. We create apps people can actually use every day in the communities they care about.
+    39	        </p>
+    40	      </div>
+    41	      <span class="overlay-caption overlay-caption-lower-right">The Triple Bar M Ranch, Wyoming</span>
+    42	    </section>
+    43	
+    44	    <main>
+    45	      <section class="featured-apps">
+    46	        <article class="card">
+    47	          <span class="badge">Portfolio</span>
+    48	          <h2 class="section-title">Featured Apps</h2>
+    49	          <p>BarrelConnect and Bullrider are live portfolio products, with MarketCommand and other tools in active development.</p>
+    50	        </article>
+    51	
+    52	        <div class="grid two">
+    53	        <article class="card">
+    54	          <span class="badge">Portfolio App</span>
+    55	          <h2 class="section-title brand-accent-barrel">Barrelconnect</h2>
+    56	          <p>
+    57	            A purpose-built app for the barrel racing community — connecting riders, events, results, and upcoming tools in one place.
+    58	          </p>
+    59	          <div class="button-row">
+    60	            <a class="btn primary" href="barrelconnect.html">View App Page</a>
+    61	            <a class="btn secondary" href="https://barrelconnect.pro" target="_blank" rel="noopener">Visit barrelconnect.pro</a>
+    62	          </div>
+    63	        </article>
+    64	
+    65	        <article class="card">
+    66	          <span class="badge">Portfolio App</span>
+    67	          <h2 class="section-title brand-accent-bull">Bullrider</h2>
+    68	          <p>
+    69	            A focused platform for bull riding culture and competition — designed for riders, fans, and organizers.
+    70	          </p>
+    71	          <div class="button-row">
+    72	            <a class="btn primary" href="bullrider.html">View App Page</a>
+    73	            <a class="btn secondary" href="https://bullrider.pro" target="_blank" rel="noopener">Visit bullrider.pro</a>
+    74	          </div>
+    75	        </article>
+    76	        </div>
+    77	      </section>
+    78	
+    79	      <section class="apps-dev-preview">
+    80	        <article class="card">
+
+=== styles.css (first 80 lines) ===
+     1	:root {
+     2	  --bg: #0f1720;
+     3	  --surface: #13202d;
+     4	  --surface-2: #1d2f42;
+     5	  --text: #eaf0f6;
+     6	  --muted: #b8c5d3;
+     7	  --brand: #d8b15e;
+     8	  --brand-2: #74b2dd;
+     9	  --line: rgba(255, 255, 255, 0.14);
+    10	  --shadow: 0 12px 28px rgba(0, 0, 0, 0.24);
+    11	}
+    12	
+    13	* {
+    14	  box-sizing: border-box;
+    15	}
+    16	
+    17	html,
+    18	body {
+    19	  margin: 0;
+    20	  padding: 0;
+    21	}
+    22	
+    23	body {
+    24	  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+    25	  background: linear-gradient(180deg, #0d141d 0%, #101a25 100%);
+    26	  color: var(--text);
+    27	  line-height: 1.55;
+    28	}
+    29	
+    30	a {
+    31	  color: inherit;
+    32	}
+    33	
+    34	img {
+    35	  max-width: 100%;
+    36	  height: auto;
+    37	  display: block;
+    38	}
+    39	
+    40	.site-header {
+    41	  position: sticky;
+    42	  top: 0;
+    43	  z-index: 100;
+    44	  background: rgba(10, 17, 24, 0.86);
+    45	  backdrop-filter: blur(8px);
+    46	  border-bottom: 1px solid var(--line);
+    47	}
+    48	
+    49	.nav-wrap {
+    50	  max-width: 1160px;
+    51	  margin: 0 auto;
+    52	  padding: 0.8rem 1rem;
+    53	  display: flex;
+    54	  align-items: center;
+    55	  justify-content: space-between;
+    56	  gap: 1rem;
+    57	}
+    58	
+    59	.brand {
+    60	  text-decoration: none;
+    61	  font-weight: 800;
+    62	  letter-spacing: 0.4px;
+    63	}
+    64	
+    65	.brand span {
+    66	  color: var(--brand);
+    67	}
+    68	
+    69	.menu-toggle {
+    70	  border: 1px solid var(--line);
+    71	  background: #152433;
+    72	  color: var(--text);
+    73	  border-radius: 8px;
+    74	  width: 40px;
+    75	  height: 40px;
+    76	  display: none;
+    77	}
+    78	
+    79	.nav-links {
+    80	  display: flex;
+
+=== barrelconnect.html (first 40 lines) ===
+     1	<!doctype html>
+     2	<html lang="en">
+     3	  <head>
+     4	    <meta charset="UTF-8" />
+     5	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     6	    <title>Barrelconnect | Apps 1, LLC</title>
+     7	    <meta name="description" content="Barrelconnect app page by Apps 1, LLC." />
+     8	    <link rel="stylesheet" href="styles.css" />
+     9	  </head>
+    10	  <body>
+    11	    <header class="site-header">
+    12	      <div class="nav-wrap">
+    13	        <a class="brand" href="index.html">Apps <span>1, LLC</span></a>
+    14	        <button class="menu-toggle" data-menu-toggle aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    15	        <nav class="nav-links" data-nav-links>
+    16	          <a href="index.html">Home</a>
+    17	          <a href="barrelconnect.html" class="active">Barrelconnect</a>
+    18	          <a href="bullrider.html">Bullrider</a>
+    19	          <a href="apps-in-development.html">Apps in Development</a>
+    20	          <a href="investor-relations.html">Investor Relations</a>
+    21	          <a href="contact.html">Contact</a>
+    22	          <a href="privacy.html">Privacy</a>
+    23	          <a href="terms.html">Terms</a>
+    24	        </nav>
+    25	      </div>
+    26	    </header>
+    27	
+    28	    <section class="hero app-hero barrelconnect-hero">
+    29	      <img src="assets/images/barrelconnect-hero.png" alt="Barrelconnect app hero" />
+    30	      <div class="overlay"></div>
+    31	      <div class="hero-content">
+    32	        <h1 class="brand-accent-barrel">Barrelconnect</h1>
+    33	        <p>Part of Apps 1 LLC Portfolio - More apps coming.</p>
+    34	      </div>
+    35	    </section>
+    36	
+    37	    <main>
+    38	      <section class="card">
+    39	        <h2 class="section-title">About the App</h2>
+    40	        <p>
+
+=== bullrider.html (first 40 lines) ===
+     1	<!doctype html>
+     2	<html lang="en">
+     3	  <head>
+     4	    <meta charset="UTF-8" />
+     5	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     6	    <title>Bullrider | Apps 1, LLC</title>
+     7	    <meta name="description" content="Bullrider app page by Apps 1, LLC." />
+     8	    <link rel="stylesheet" href="styles.css" />
+     9	  </head>
+    10	  <body>
+    11	    <header class="site-header">
+    12	      <div class="nav-wrap">
+    13	        <a class="brand" href="index.html">Apps <span>1, LLC</span></a>
+    14	        <button class="menu-toggle" data-menu-toggle aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    15	        <nav class="nav-links" data-nav-links>
+    16	          <a href="index.html">Home</a>
+    17	          <a href="barrelconnect.html">Barrelconnect</a>
+    18	          <a href="bullrider.html" class="active">Bullrider</a>
+    19	          <a href="apps-in-development.html">Apps in Development</a>
+    20	          <a href="investor-relations.html">Investor Relations</a>
+    21	          <a href="contact.html">Contact</a>
+    22	          <a href="privacy.html">Privacy</a>
+    23	          <a href="terms.html">Terms</a>
+    24	        </nav>
+    25	      </div>
+    26	    </header>
+    27	
+    28	    <section class="hero app-hero bullrider-hero">
+    29	      <img src="assets/images/bullrider-hero.png" alt="Bullrider app hero" />
+    30	      <div class="overlay"></div>
+    31	      <div class="hero-content">
+    32	        <h1 class="brand-accent-bull">Bullrider</h1>
+    33	        <p>Part of Apps 1 LLC Portfolio - More apps coming.</p>
+    34	      </div>
+    35	    </section>
+    36	
+    37	    <main>
+    38	      <section class="grid two">
+    39	        <article class="card">
+    40	          <h2 class="section-title">About the App</h2>
