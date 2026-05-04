@@ -160,6 +160,10 @@ main {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid.three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .card {
   background: linear-gradient(180deg, rgba(25, 39, 55, 0.82), rgba(17, 29, 42, 0.92));
   border: 1px solid var(--line);
@@ -484,6 +488,7 @@ ul.compact {
 
 @media (max-width: 900px) {
   .grid.two,
+  .grid.three,
   .contact-layout {
     grid-template-columns: 1fr;
   }
