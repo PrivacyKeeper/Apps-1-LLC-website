@@ -278,6 +278,10 @@ main {
   color: #fbbf24;
 }
 
+.brand-accent-clay {
+  color: #c8a7ff;
+}
+
 .marketcommand-hero img {
   object-position: center center;
   filter: brightness(1.05);
